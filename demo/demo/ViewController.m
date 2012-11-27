@@ -14,7 +14,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    ZXCalendarView *calendar = [[ZXCalendarView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
+    ZXCalendarView *calendar = [[ZXCalendarView alloc] initWithFrame:CGRectMake(0, 0, 320, 346)];
     [self.view addSubview:calendar];
     
 	// Do any additional setup after loading the view, typically from a nib.

@@ -19,6 +19,7 @@
 		333A007216627BE600EDF18E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A007116627BE600EDF18E /* ViewController.m */; };
 		333A007516627BE600EDF18E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 333A007316627BE600EDF18E /* ViewController.xib */; };
 		333A007E16627C0100EDF18E /* ZXCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 333A007D16627C0100EDF18E /* ZXCalendarView.m */; };
+		43FFB01816645B85001D56D8 /* ZXCalendarView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 43FFB01716645B85001D56D8 /* ZXCalendarView.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		333A007416627BE600EDF18E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		333A007C16627C0100EDF18E /* ZXCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXCalendarView.h; sourceTree = "<group>"; };
 		333A007D16627C0100EDF18E /* ZXCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXCalendarView.m; sourceTree = "<group>"; };
+		43FFB01716645B85001D56D8 /* ZXCalendarView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ZXCalendarView.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				333A007C16627C0100EDF18E /* ZXCalendarView.h */,
 				333A007D16627C0100EDF18E /* ZXCalendarView.m */,
+				43FFB01716645B85001D56D8 /* ZXCalendarView.bundle */,
 			);
 			name = ZXCalendar;
 			path = ../../ZXCalendar;
@@ -177,6 +180,7 @@
 				333A006D16627BE600EDF18E /* Default@2x.png in Resources */,
 				333A006F16627BE600EDF18E /* Default-568h@2x.png in Resources */,
 				333A007516627BE600EDF18E /* ViewController.xib in Resources */,
+				43FFB01816645B85001D56D8 /* ZXCalendarView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +313,7 @@
 				333A007A16627BE600EDF18E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,13 +11,20 @@
 @class ZXCalendarMonthView;
 @class ZXCalendarDayView;
 
-@interface ZXCalendarView : UIView
+
+@protocol ZXCalendarMonthViewDelegate
+-(void)calendar:(ZXCalendarMonthView*)monthView didSelectDate:(NSDate*)date;
+@end
+
+
+@interface ZXCalendarView : UIView<ZXCalendarMonthViewDelegate>
 {
     NSCalendar *calendar;
     UILabel *title;
-    ZXCalendarMonthView *monthView;
+    ZXCalendarMonthView *monthView,*leftMonth,*rightMonth;
+    int year,month;
 }
-
+@property(nonatomic,strong) NSDate *selectedDate;
 @end
 
 
@@ -28,8 +35,9 @@
     NSCalendar *calendar;
     int year;
     int month;
-
+    NSMutableArray *days;
 }
+@property(nonatomic,unsafe_unretained) id<ZXCalendarMonthViewDelegate>delegate;
 - (id)initWithYear:(int)theYear andMonth:(int)theMonth withFrame:(CGRect)frame;
 @end
 
@@ -37,18 +45,21 @@ typedef enum
 {
     cToday,
     cNormal,
-    cOther
+    cOther,
+    cSelect
 }ZXCalendarDayType;
 @interface ZXCalendarDayView : UIView
 {
+    UIImageView *bgView;
     NSCalendar *calendar;
     int month;
     NSDate *date;
-        ZXCalendarDayType type;
+    UILabel *label;
+    ZXCalendarDayType type;
 }
 
 - (id)initWithDate:(NSDate *)theDate withMonth:(int)theMonth withIndex:(int)index;
-
+-(void)setBgImageViewType:(ZXCalendarDayType)theType;
 @end
 
 
